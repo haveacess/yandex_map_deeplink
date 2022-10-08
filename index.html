@@ -1,0 +1,9 @@
+Redirecting...
+<script>
+window.onload = () => {
+  const params = (new URL(document.location)).searchParams;
+  const text = params.get('text');
+  
+  window.location.href = `yandexmaps://maps.yandex.com/?text=${text}`;
+}
+</script>
