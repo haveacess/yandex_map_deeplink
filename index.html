@@ -7,7 +7,7 @@ window.onload = () => {
   
   try {
     window.location.href = desitinationUrl.replace('{protocol}', 'yandexmaps');
-  } catch() {
+  } catch (e) {
     window.location.href = desitinationUrl.replace('{protocol}', 'https');
   }
 }
