@@ -6,7 +6,10 @@ window.onload = () => {
   const desitinationUrl = `{protocol}://maps.yandex.com/?text=${text}`;
   
   window.location.href = desitinationUrl.replace('{protocol}', 'yandexmaps');
-  window.location.href = desitinationUrl.replace('{protocol}', 'https');
+  
+  setTimeout(() => {
+    window.location.href = desitinationUrl.replace('{protocol}', 'https');
+  }, 1000);
   
 }
 </script>
